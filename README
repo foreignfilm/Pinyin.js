@@ -1,0 +1,3 @@
+h1. Pīnyīn.js
+
+A jQuery plugin for instant pīnyīn input in text fields. You can type numeric pin1yin1 which gets converted to proper pīnyīn right away.
