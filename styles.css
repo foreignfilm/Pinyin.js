@@ -1,7 +1,20 @@
+/* http://www.paratype.com/public/ */
+
+@font-face {
+  font-family: 'PtSans';
+  src: url('ptSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PtSans';
+  font-weight: 'bold';
+  src: url('ptSansBold.ttf') format('truetype');
+}
+
 body {
     background-color: #ac493a;
     color: #fff;
-    font: normal 1em 'Pt Sans', Helvetica, Arial, sans-serif;
+    font: normal 1em 'PtSans', Helvetica, Arial, sans-serif;
 }
 
 em {
