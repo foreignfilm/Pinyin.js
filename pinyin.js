@@ -61,7 +61,7 @@
                 // Get the pressed key code
                 var code = (e.keyCode ? e.keyCode : e.which);
                 
-                // Do stuff if it’s a space
+                // Do stuff if it’s a space or one of the tone numbers (1-4)
                 if (code == 32 || code == 49 || code == 50 || code == 51 || code == 52) {
                 
                     // Get the value of the field
