@@ -1,1 +1,76 @@
-My GitHub Page
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Pinyin Input Test</title>
+	</head>
+
+	<body>
+		
+		<div id="main">
+		
+		    <header>
+		
+    		    <div class="hanzi" id="pinyinHanzi">拼<br/>音</div>
+    		
+    		    <hgroup>
+    		        <h1>Pīnyīn.js</h1>
+    		        <h2>instant pīnyīn input jQuery plugin</h2>
+    		    </hgroup>
+		    
+		    </header>
+		    
+		    
+		    <div id="description">
+		    
+		        <p>With this plugin, you can make any text field on your website understand numeric <em>Pin1yin1</em> and instantly convert it to proper <em>Pīnyīn</em> with tone marks.</p>
+		        <p>You just type a Pīnyīn syllable followed by a tone number (1, 2, 3 or 4). The script will take the needed vowel and replace it with its accented version.</p>
+		        <ul>
+		            <li><em>wo3</em> → <em>wǒ</em></li>
+		            <li><em>zhi1dao4</em> → <em>zhīdào</em></li>
+		            <li><em>ni3 zai4 zuo4 shen2me?</em> → <em>nǐ zài zuò shénme?</em></li>
+		        </ul>
+		        
+		        <form id="demo">
+		            <h3><span class="hanzi">尝</span> Live test:</h3>
+		            <input id="pinyin" name="pinyin" placeholder="wo3 ai4 zhong1 guo2" />
+		        </form>
+		        
+		    </div>
+		    
+		    <div id="sideColumn">
+		    
+    		    <div id="download">
+    		        <h3><span class="hanzi">下</span> Download</h3>
+    		        <ul>
+    		            <li><a href="#">Pinyin.js <span class="secondary">jQuery plugin [min]</span></a></li>
+    		            <li><a href="#">Pinyin.js <span class="secondary">jQuery plugin [source]</span></a></li>
+    		        </ul>
+    		    </div>
+    		    
+    		    <div id="use">
+    		        <h3><span class="hanzi">用</span> Use</h3>
+    		        <code>$('<span class="secondary">input.myClass</span>').pinyin();</code>
+    		    </div>
+    		    
+    		    <div id="thank">
+    		        <h3><span class="hanzi">谢</span> Thank</h3>
+    		        <p>Arnold <span class="secondary">egukin</span> Sakhnov<br/>
+    		        <a href="malto:egukin@gmail.com" title="Send an email">egukin@gmail.com</a><br/>
+    		        <a href="http://twitter.com/egukin" title="Follow on Twitter">@egukin</a></p>
+    		    </div>
+    		    
+    		</div>
+				
+	</body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="pinyin.js"></script>
+<!--	<script type="text/javascript" src="script.js"></script>-->
+    <script type="text/javascript">
+        $('input#pinyin').pinyin();
+    </script>
+
+</html>
