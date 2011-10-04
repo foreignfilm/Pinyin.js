@@ -1,0 +1,125 @@
+body {
+    background-color: #ac493a;
+    color: #fff;
+    font: normal 1em 'Pt Sans', Helvetica, Arial, sans-serif;
+}
+
+em {
+    font-style: normal;
+    background: #fff;
+    text-shadow: none;
+    color: #9b3c34;
+    font-size: 0.9em;
+    padding: 0.1em 0.3em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px #c65c44 solid;
+}
+
+.hanzi {
+    font-family: Arial, 'STHeitiTC-Medium', HeiTi, '黑体', sans-serif;
+    opacity: 0.7;
+}
+
+.secondary {
+    opacity: 0.7;
+}
+
+ul {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0.4em;
+    font-size: 1.2em;
+}
+
+#main {
+    width: 900px;
+    margin-left: 20px;
+}
+
+header {
+    text-shadow: #9b3c34 3px 3px 0;
+    overflow: hidden;
+}
+
+    header > * {
+        float: left;
+    }
+
+    #pinyinHanzi {
+        font-size: 2.8em;
+        margin: 0.3em 0.3em 0 0;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+#description {
+    text-shadow: #9b3c34 2px 2px 0;
+    width: 430px;
+    margin-left: 60px;
+    font-size: 1.1em;
+    float: left;
+}
+
+#sideColumn {
+    float: left;
+    width: 300px;
+    margin-left: 50px;
+}
+
+#sideColumn > div {
+    background: #9b3c34;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+    #sideColumn > div h3 {
+        margin: 0 0 10px 0;
+    }
+    
+    #download ul {
+        font-size: 0.9em;
+        margin-top: 0;
+    }
+    
+    #use code {
+        margin: 10px 0 0 20px;
+    }
+    
+    #thank p {
+        margin-left: 20px;
+        line-height: 150%;
+    }
+
+#demo {
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+    #demo h3 {
+        color: #86332c;
+        margin: 0 0 0 -40px;
+        font-size: 2em;
+    }
+    
+    input#pinyin {
+        font-size: 1.3em;
+        padding: 0.5em;
+        width: 300px;
+        border: 10px solid #9b3c34;
+        margin: 0;
+    }
