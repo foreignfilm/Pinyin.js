@@ -97,6 +97,12 @@ header {
         font-size: 4em;
         margin: 0;
     }
+
+        h1 sup {
+            font-size: 0.4em;
+            margin-left: 10px;
+            opacity: 0.7;
+        }
     
     h2 {
         margin-top: 0;
