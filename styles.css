@@ -11,6 +11,13 @@
   src: url('ptSansBold.ttf') format('truetype');
 }
 
+::selection {
+        background: #fff;
+}
+::-moz-selection {
+        background: #fff;
+}
+
 body {
     background-color: #ac493a;
     color: #fff;
@@ -26,11 +33,20 @@ em {
     padding: 0.1em 0.3em;
 }
 
+i {
+  opacity: 0.7;
+  font-style: italic
+}
+
 a {
     color: #fff;
     text-decoration: none;
     border-bottom: 1px #c65c44 solid;
 }
+
+  a.inactive {
+    opacity: 0.5
+  }
 
 .hanzi {
     font-family: Arial, 'STHeitiTC-Medium', HeiTi, '黑体', sans-serif;
@@ -39,6 +55,11 @@ a {
 
 .secondary {
     opacity: 0.7;
+}
+
+.code, code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  line-height: 160%
 }
 
 ul {
@@ -60,6 +81,7 @@ li {
 header {
     text-shadow: #9b3c34 3px 3px 0;
     overflow: hidden;
+    margin-bottom: 20px
 }
 
     header > * {
@@ -80,50 +102,75 @@ header {
         margin-top: 0;
     }
     
-#description {
+      h2 a {
+        border-bottom: none;
+      }
+      
+        h2 a.inactive {
+          border-bottom: 2px #fff dashed
+        }
+        
+      h3.code {
+        font-size: 0.9em;
+        white-space: pre;
+        background: #A34237;
+        padding: 5px 10px;
+        margin-left: -5px;
+      }
+    
+.description {
     text-shadow: #9b3c34 2px 2px 0;
     width: 430px;
     margin-left: 60px;
     font-size: 1.1em;
     float: left;
+    padding-bottom: 30px;
 }
 
-#sideColumn {
+  .description code {
+    white-space: pre;
+    font-size: 0.8em;
+    line-height: 0.5em
+  }
+
+.sideColumn {
     float: left;
     width: 300px;
     margin-left: 50px;
 }
 
-#sideColumn > div {
+.sideColumn > div {
     background: #9b3c34;
     padding: 15px 20px;
     margin-bottom: 10px;
 }
 
-    #sideColumn > div h3 {
+    .sideColumn > div h3 {
         margin: 0 0 10px 0;
     }
     
-    #download ul {
+    .download ul {
         font-size: 0.9em;
         margin-top: 0;
     }
     
-    #use code {
+    .use code {
         margin: 10px 0 0 20px;
+        display: block;
+        font-size: 0.8em
     }
     
-    #thank p {
+    .thank p {
         margin-left: 20px;
         line-height: 150%;
     }
 
-#demo {
+.demo {
     text-shadow: none;
     margin-top: 30px;
 }
 
-    #demo h3 {
+    .demo h3 {
         color: #86332c;
         margin: 0 0 0 -40px;
         font-size: 2em;

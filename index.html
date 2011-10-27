@@ -18,12 +18,14 @@
     		
     		    <hgroup>
     		        <h1>Pīnyīn.js</h1>
-    		        <h2>instant pīnyīn input jQuery plugin</h2>
+    		        <h2>instant pīnyīn <a href="#getPlugin" title="jQuery plugin page">input jQuery plugin</a> / <a class="inactive" href="#getHelper" title="Conversion helper object page">conversion helper</a></h2>
     		    </hgroup>
 		    
 		    </header>
 		    
+		<div id="getPlugin">
 		    
+<<<<<<< HEAD
 		    <div id="description">
 		    
 		        <p>With this plugin, you can make any text field on your website understand numeric <em>Pin1yin1</em> and instantly convert it to proper <em>Pīnyīn</em> with tone marks.</p>
@@ -39,8 +41,54 @@
 		            <input id="pinyin" name="pinyin" placeholder="wo3 ai4 zhong1 guo2" />
 		        </form>
 		        
+=======
+			<div class="description">
+			
+			    <p>With this plugin, you can make any text field on your website understand numeric <em>Pin1yin1</em> and instantly convert it to proper <em>Pīnyīn</em> with tone marks.</p>
+			    <p>You just type a Pīnyīn syllable followed by a tone number (1, 2, 3 or 4). The script will take the needed vowel and replace it with its accented version.</p>
+			    <ul>
+				<li><em>wo3</em> → <em>wǒ</em></li>
+				<li><em>zhi1dao4</em> → <em>zhīdào</em></li>
+				<li><em>ni3 zai4 zuo4 shen2me?</em> → <em>nǐ zài zuò shénme?</em></li>
+			    </ul>
+			    
+			    <form class="demo">
+				<h3><span class="hanzi">尝</span> Live test:</h3>
+				<input id="pinyin" name="pinyin" placeholder="wo3 ai4 zhong1 guo2" />
+			    </form>
+			    
+			</div>
+			
+			<div class="sideColumn">
+			
+			<div class="download">
+			    <h3><span class="hanzi">下</span> Download</h3>
+			    <ul>
+				<li><a href="https://raw.github.com/egukin/Pinyin.js/master/pinyin.jq.min.js">Pinyin.js <span class="secondary">jQuery plugin [min]</span></a></li>
+				<li><a href="https://raw.github.com/egukin/Pinyin.js/master/pinyin.jq.js">Pinyin.js <span class="secondary">jQuery plugin [source]</span></a></li>
+			    </ul>
+			</div>
+			
+			<div class="use">
+			    <h3><span class="hanzi">用</span> Use</h3>
+			    <code>$('<span class="secondary">input.myClass</span>').pinyin();</code>
+			</div>
+			
+			<div class="thank">
+			    <h3><span class="hanzi">谢</span> Thank</h3>
+			    <p>Arnold <span class="secondary">egukin</span> Sakhnov<br/>
+			    <a href="mailto:egukin@gmail.com" title="Send an email">egukin@gmail.com</a><br/>
+			    <a href="http://twitter.com/egukin" title="Follow on Twitter">@egukin</a></p>
+			</div>
+			
+>>>>>>> Added the conversion helper class links and description
 		    </div>
+			
+		</div>
+		
+		<div id="getHelper">
 		    
+<<<<<<< HEAD
 		    <div id="sideColumn">
 		    
     		    <div id="download">
@@ -64,13 +112,62 @@
     		    </div>
     		    
     		</div>
+=======
+			<div class="description">
+			
+			    <p>If you want to have more control over the handling of your data, you can use this helper object that essentially does the same thing, plus some more.</p>
+			    <p>There are two methods avaliable to you:</p>
+			    
+			    <h3 class="code">pinyinJs.convert(<br/>   numericPinyin <i>string</i>,<br/>   [makeObject <i>boolean</i>]<br/>)</h3>
+			    <p><em>convert()</em> simply takes a numeric pinyin string and returns proper pinyin, preserving the whitespace.</p>
+			    <p>The <em>makeObject</em> parameter is optional and is set to <em>false</em> by default. When set to <em>true</em>, it will make the method form an structured object for each syllable and output an array of such objects, like so:</p>
+			    <p><code>[<br/>   {<br/>      syllable: 'wǒ',<br/>      originalSyllable: 'wo3',<br/>      tone: 3<br/>   }, {<br/>      syllable: 'ài',<br/>      originalSyllable: 'ai1',<br/>      tone: 4<br/>   }<br/>   …<br/>]</code></p>
+			    
+			    <h3 class="code">pinyinJs.revert(<br/>   pinyin <i>string</i><br/>)</h3>
+			    
+			    <p><em>revert()</em> does the opposite thing, funny enough. It takes your proper good Pīnyīn and extracts the tone from each syllable. It always returns a structured object:</p>
+			    
+			    <p><code>[<br/>   {<br/>      syllable: 'wo',<br/>      originalSyllable: 'wǒ',<br/>      tone: 3<br/>   }, {<br/>      syllable: 'ai',<br/>      originalSyllable: 'ài',<br/>      tone: 4<br/>   }<br/>   …<br/>]</code></p>
+			    
+			    <p><strong>NB!</strong> This method requires all Pīnyīn syllables in the string to be space-separated (<em>wǒ ài zhōng guó</em>).</p>
+			    
+			</div>
+			
+			<div class="sideColumn">
+			
+			<div class="download">
+			    <h3><span class="hanzi">下</span> Download</h3>
+			    <ul>
+				<li><a href="https://raw.github.com/egukin/Pinyin.js/master/pinyin.min.js">Pinyin.js <span class="secondary">helper object [min]</span></a></li>
+				<li><a href="https://raw.github.com/egukin/Pinyin.js/master/pinyin.js">Pinyin.js <span class="secondary">helper object [source]</span></a></li>
+			    </ul>
+			</div>
+			
+			<div class="use">
+			    <h3><span class="hanzi">用</span> Use</h3>
+			    <code><span class="secondary">var</span> convertedPinyin <span class="secondary">=</span> pinyinJs.convert(<span class="secondary">numPinyin</span>);</code>
+			</div>
+			
+			<div class="thank">
+			    <h3><span class="hanzi">谢</span> Thank</h3>
+			    <p>Arnold <span class="secondary">egukin</span> Sakhnov<br/>
+			    <a href="mailto:egukin@gmail.com" title="Send an email">egukin@gmail.com</a><br/>
+			    <a href="http://twitter.com/egukin" title="Follow on Twitter">@egukin</a></p>
+			</div>
+			
+		    </div>
+			
+		</div>
+>>>>>>> Added the conversion helper class links and description
 				
 	</body>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="pinyin.js"></script>
-<!--	<script type="text/javascript" src="script.js"></script>-->
-    <script type="text/javascript">
-        $('input#pinyin').pinyin();
-    </script>
+	<script type="text/javascript" src="script.js"></script>
+	
+	<script>function PinyinJs(){this.pinyinChars={1:"\u0101,\u0113,\u012b,\u014d,\u016b,\u01d6,\u0100,\u0112,\u012a,\u014c".split(","),2:"\u00e1,\u00e9,\u00ed,\u00f3,\u00fa,\u01d8,\u00c1,\u00c9,\u00cd,\u00d3".split(","),3:"\u01ce,\u011b,\u01d0,\u01d2,\u01d4,\u01da,\u01cd,\u011a,\u01cf,\u01d1".split(","),4:"\u00e0,\u00e8,\u00ec,\u00f2,\u00f9,\u01dc,\u00c0,\u00c8,\u00cc,\u00d2".split(",")};this.tonelessChars="a,e,i,o,u,\u00fc,A,E,I,O".split(",");this.accentsMap={a:"a*",e:"e*",i:"i*",o:"o*",u:"u*",v:"v*",A:"A*",
+E:"E*",O:"O*",ai:"a*i",ao:"a*o",ei:"e*i",ia:"ia*",iao:"ia*",ie:"ie*",io:"io*",iu:"iu*",Ai:"A*i",Ao:"A*o",Ei:"E*i",ou:"o*u",ua:"ua*",uai:"ua*i",ue:"ue*",ui:"ui*",uo:"uo*",ve:"ve*",Ou:"O*u"};this.vowels="a*,e*,i*,o*,u*,v*,A*,E*,O*".split(",");this.makeObject=false;this.convert=function(a,f){var e=this,c=function(a){var b=a.substr(-1,1),d=!parseInt(b)?a:a.substring(0,a.indexOf(b));if(b==0||b>4||!parseInt(b))return f?{tone:5,syllable:d,originalSyllable:a}:d;for(var c in e.accentsMap)if(d.search(c)!=-1){d=
+d.replace(RegExp(c),e.accentsMap[c]);break}for(i=0;i<10;i++)d=d.replace(e.vowels[i],e.pinyinChars[b][i]);return f?{tone:b,syllable:d,originalSyllable:a}:d};if(f){var b=[],a=a.replace(/([a-zA-Z\u00fc\u00dc]+)([\d])([^ ])/g,"$1$2 $3"),g=a.split(" "),h=g.length;for(j=0;j<h;j++)b.push(c(g[j]))}else a=a.replace(/([a-zA-Z\u00fc\u00dc]+)(\d)/g,c);return f?b:a};this.revert=function(a){var a=a.split(" "),f=a.length,e=[];for(j=0;j<f;j++){var c=0,b=a[j];for(i=1;i<5;i++)if(c==0)for(var g in this.pinyinChars[i]){if(b.search(this.pinyinChars[i][g])!=
+-1){b=b.replace(RegExp(this.pinyinChars[i][g]),this.tonelessChars[g]);c=i;e.push({tone:c,syllable:b,originalSyllable:a[j]});break}}else break;c==0&&e.push({tone:5,syllable:b,originalSyllable:a[j]})}return e}}var pinyinJs=new PinyinJs;</script>
 
 </html>
