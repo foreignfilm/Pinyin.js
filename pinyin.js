@@ -14,11 +14,13 @@ function PinyinJs() {
 
     // Asterisks determine the position of the accent in pīnyīn vowel clusters
     this.accentsMap = {
+        iao: 'ia*o', uai: 'ua*i',
+        ai: 'a*i', ao: 'a*o', ei: 'e*i', ia: 'ia*',  ie: 'ie*',
+        io: 'io*', iu: 'iu*', Ai: 'A*i', Ao: 'A*o', Ei: 'E*i',
+        ou: 'o*u', ua: 'ua*',  ue: 'ue*', ui: 'ui*', uo: 'uo*',
+        ve: 'üe*', Ou: 'O*u', 
         a: 'a*', e: 'e*', i: 'i*', o: 'o*', u: 'u*', v: 'v*',
-        A: 'A*', E: 'E*', O: 'O*', ai: 'a*i', ao: 'a*o', ei: 'e*i',
-        ia: 'ia*', iao: 'ia*', ie: 'ie*', io: 'io*', iu: 'iu*', Ai: 'A*i',
-        Ao: 'A*o', Ei: 'E*i', ou: 'o*u', ua: 'ua*', uai: 'ua*i', ue: 'ue*',
-        ui: 'ui*', uo: 'uo*', ve: 've*', Ou: 'O*u'
+        A: 'A*', E: 'E*', O: 'O*'
     };
 
     // Vowels to replace with their accented forms
